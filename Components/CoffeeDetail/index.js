@@ -40,7 +40,8 @@ class CoffeeDetail extends Component {
     });
 
   render() {
-    const coffeeshop = coffeeshops[0];
+    const { coffeeshop } = this.props.route.params;
+
     return (
       <Container>
         <Content>

@@ -7,10 +7,10 @@ import { ListItem, Card, CardItem, Thumbnail, Text, Left } from "native-base";
 // Style
 import styles from "./styles";
 
-const CoffeeItem = ({ coffeeshop }) => (
+const CoffeeItem = ({ coffeeshop,navigation }) => (
   <ImageBackground source={coffeeshop.background} style={styles.background}>
     <View style={styles.overlay} />
-    <ListItem button onPress={() => alert("Pressed")} style={styles.listitem}>
+    <ListItem button onPress={() =>navigation.navigate("CoffeeDetail",{coffeeshop})} style={styles.listitem}>
       <Card style={styles.transparent}>
         <CardItem style={styles.transparent}>
           <Left>

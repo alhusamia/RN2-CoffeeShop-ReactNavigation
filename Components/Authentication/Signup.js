@@ -6,7 +6,7 @@ import { Text } from "native-base";
 
 import styles from "./styles";
 
-const Signup = () => (
+const Signup = ({ navigation }) => (
   <View style={styles.authContainer}>
     <Text style={styles.authTitle}>Signup</Text>
     <TextInput
